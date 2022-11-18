@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "IIvp3hYp/A7pwcT5E+KJ2gt1XdrrAiknsd56j0holkO7B0XlNssjWsoMj8YAWGiC4jactTLKJoelk1tdIXUFuQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\TC\\repos\\OpenWeatherMap API\\OpenWeatherMap API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
