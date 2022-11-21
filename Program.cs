@@ -1,10 +1,20 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json.Linq;
 using static System.Net.WebRequestMethods;
 using static System.Net.WebRequestMethods;
 
+// "DefaultKey"
+var config = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
 
 
-string apiKey = "6d2b93a6b18061428c87beb1cb18891b";
+
+// string key = File.ReadAllText("appsettings.json");
+// string apiKey = JObject.Parse(key).GetValue("DefaultKey").ToString();
+
+string apiKey = config.GetConnectionString("openweathermap");
 var client = new HttpClient();
 
 Console.WriteLine("Enter zip code");
